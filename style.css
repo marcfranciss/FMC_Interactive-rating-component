@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: "Overpass";
-  src: url(./fonts/Overpass/Overpass-VariableFont_wght.ttf);
+  src: url(./fonts/Overpass/Overpass-VariableFont_wght.ttf) format(truetype);
   font-weight: 400, 700;
 }
 * {
@@ -18,13 +18,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-body,
-html {
+body {
   scroll-behavior: smooth;
   background-color: var(--clr-accent);
   color: var(--clr-white);
   font-family: "Overpass";
   font-weight: 400;
+  min-height: 100vh;
 }
 img {
   width: 100%;
@@ -80,6 +80,7 @@ section {
   margin-bottom: 32px; /* mobile: 24px*/
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 .rate {
   width: 51px;

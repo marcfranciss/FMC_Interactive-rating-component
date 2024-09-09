@@ -13,17 +13,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- Rating state start -->
@@ -32,17 +21,27 @@
         <div class="icon-holder">
           <img src="./images/icon-star.svg" alt="" />
         </div>
-        <h1>How did we do?</h1>
-        <p>
+        <h1 tabindex="0">How did we do?</h1>
+        <p tabindex="0">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
         <div class="rate-container">
-          <div class="rate">1</div>
-          <div class="rate">2</div>
-          <div class="rate">3</div>
-          <div class="rate">4</div>
-          <div class="rate">5</div>
+          <div role="radio" aria-checked="false" class="rate" tabindex="0">
+            1
+          </div>
+          <div role="radio" aria-checked="false" class="rate" tabindex="0">
+            2
+          </div>
+          <div role="radio" aria-checked="false" class="rate" tabindex="0">
+            3
+          </div>
+          <div role="radio" aria-checked="false" class="rate" tabindex="0">
+            4
+          </div>
+          <div role="radio" aria-checked="false" class="rate" tabindex="0">
+            5
+          </div>
         </div>
         <button class="btn-submit" type="button">Submit</button>
       </div>
@@ -63,13 +62,6 @@
       </div>
     </section>
     <!-- Thank you state end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Marc Francis</a>.
-    </div>
   </body>
   <script src="./script.js"></script>
 </html>
