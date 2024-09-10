@@ -9,12 +9,12 @@ rateC.forEach((rating) => {
     const active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
-      active.setAttribute("aria-selected", false);
+      active.setAttribute("aria-pressed", false);
     }
     const rate = e.target;
     rate.classList.add("active");
     rateResult.innerHTML = rate.innerHTML;
-    rate.setAttribute("aria-selected", true);
+    rate.setAttribute("aria-pressed", true);
   });
 });
 
