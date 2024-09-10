@@ -33,6 +33,9 @@ img {
 .hidden {
   display: none !important;
 }
+main {
+  max-width: 1440px;
+}
 section {
   margin: 195px auto auto auto;
   max-width: 412px;
@@ -49,7 +52,7 @@ section {
   border-radius: 50%;
   background-color: var(--clr-main);
   padding: 16px;
-  margin-bottom: 30px; /* mobile: 16px*/
+  margin-bottom: 35px; /* mobile: 16px*/
   /* transition: transform ease infinite; */
 }
 .icon-holder:hover {
@@ -68,7 +71,7 @@ section {
 }
 .rating-container h1 {
   font-size: 28px; /* 24px mobile*/
-  margin-bottom: 15px; /* mobile: 17px*/
+  margin-bottom: 11px; /* mobile: 17px*/
 }
 .rating-container p {
   font-size: 15px; /* mobile: 14px*/
@@ -79,8 +82,9 @@ section {
 .rate-container {
   margin-bottom: 32px; /* mobile: 24px*/
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  flex-direction: row;
+  gap: 21.5px;
+  /* justify-content: space-between; */
 }
 .rate {
   width: 51px;
@@ -107,12 +111,15 @@ section {
 }
 
 button {
+  border: none;
+  outline: none;
   width: 100%;
+  max-width: 340px;
   height: 45px;
   border-radius: 22.5px;
   text-transform: uppercase;
   color: var(--clr-accent);
-  font-size: 15px; /* mobile: 14px*/
+  font-size: 14px; /* mobile: 14px*/
   letter-spacing: 2px; /* mobile: 1.87px*/
   font-weight: 700;
   background-color: var(--clr-orange);
@@ -131,7 +138,7 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-.result-container:not(.hidden) h2 {
+.result-container:not(.hidden) .thank-you {
   animation: zoomIn 1s ease infinite;
 }
 @keyframes zoomIn {
@@ -166,12 +173,12 @@ button:hover {
   border-radius: 22.5px;
 }
 
-.result-container h2 {
+.thank-you {
   font-weight: 700;
   font-size: 28px; /*24px mobile*/
   margin-bottom: 15px; /* 17px mobile*/
 }
-.result-container p {
+.message {
   max-width: 35ch;
   font-size: 15px;
   line-height: 24px; /* 22px mobile*/
@@ -212,11 +219,11 @@ button:hover {
   .result-container img {
     margin-bottom: 24px;
   }
-  .result-container h2 {
+  .thank-you {
     font-size: 24px;
     margin-bottom: 17px;
   }
-  .result-container p {
+  .message {
     line-height: 22px;
   }
 }
